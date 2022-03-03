@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE Policies SYSTEM "../dtd/accesscontrolpolicies.dtd">
+
+<Policies>
+
+ 	<ResourceCategory Name="com.hcl.commerce.lunu.payment.commands.HCLLunuPaymentProcessCmdResourceCategory"
+			ResourceBeanClass="com.hcl.commerce.lunu.payment.commands.HCLLunuPaymentProcessCmd">
+		<ResourceAction Name="ExecuteCommand" />
+	</ResourceCategory>		
+
+ 	
+	
+<ResourceGroup Name="AllSiteUserCmdResourceGroup"  OwnerID="RootOrganization">
+	<ResourceGroupResource Name="com.hcl.commerce.lunu.payment.commands.HCLLunuPaymentProcessCmdResourceCategory" />
+</ResourceGroup>
+ 
+
+ 
+</Policies>

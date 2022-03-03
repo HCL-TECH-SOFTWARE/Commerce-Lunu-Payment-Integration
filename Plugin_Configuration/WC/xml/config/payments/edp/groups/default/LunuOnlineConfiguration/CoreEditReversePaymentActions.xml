@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *===================================================================
+  Licensed Materials - Property of HCL Technologies
+ *
+ * HCL Commerce
+ *
+  (C) Copyright HCL Technologies Limited 1996, 2020
+ *===================================================================
+-->
+<!-- ===================================================================================================
+  This file Should NOT be changed.
+
+  This files defines the payment actions when the payment is reversed.
+==================================================================================================== -->
+
+<PaymentActions
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="com/ibm/commerce/edp/parsers/PaymentActions.xsd">
+
+	<TargetDNE>
+
+		<CurrentDNE>
+		    <Action name="ConsumeAmount" msg="Target DNE; current DNE"/>
+		</CurrentDNE>
+		
+		<CurrentApproved>
+			<Action name="ReverseApproval" msg="Target DNE; current Approved"/>
+		</CurrentApproved>
+
+		<CurrentDeposited>
+			<Action name="ConsumeAmount" msg="Target DNE; current Deposited"/>
+		</CurrentDeposited>
+
+
+	</TargetDNE>
+	
+</PaymentActions>
