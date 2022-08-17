@@ -6,7 +6,7 @@ HCL Software provides HCL Commerce open source assets “as-is” without obliga
 If you have questions or encounter problems with an HCL Commerce open source asset, please open an issue in the asset's GitHub repository. For more information about [GitHub issues](https://docs.github.com/en/issues), including creating an issue, please refer to [GitHub Docs](https://docs.github.com/en). The HCL Commerce Innovation Factory Team, who develops HCL Commerce open source assets, monitors GitHub issues and will do their best to address them. 
 
 ## HCLC Lunu Payment Integration Assset
-The asset allows HCL Commerce to integrate with Lunu Payments. Merchants can integrate Lunu to their commerce website.  Now users can place an order using Cryptocurrencies.
+The asset allows HCL Commerce to integrate with Lunu Payments. Merchants can integrate Lunu to their commerce website.  Now users can place an order using Cryptocurrencies. This asset has been tested with HCLC 9.1.9.0.
 
 
 ## Prerequisites
