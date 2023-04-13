@@ -5,7 +5,7 @@ import lunuService from '../../_foundation/apis/lunu/lunu.service';
 
 const LunuWidget: React.FC<any> = (props: any) => {
     const [showButton, setShowButton] = useState(false);
-    const [confirmationToken,setConfirmationToken]=useState<string>("");
+    const [confirmationToken,setConfirmationToken]=useState<String>("");
 
     const {amount,email,orderId,idempotenceKey}=props.paymentData;
     const getConfirmationToken = async () => {
@@ -27,6 +27,14 @@ const LunuWidget: React.FC<any> = (props: any) => {
                     sandbox: true,
                     confirmation_token: confirmationToken,
                     callbacks: {
+                        init_error: (_error) => {
+                            // Handling initialization errors
+                            console.log("error");
+                        },
+                        init_success: () => {
+                            // Handling a Successful Initialization
+                            console.log("init success");
+                        },
                         payment_paid: (paymentInfo) => {
                             // Handling a successful payment event
                             // window.location.href = successUrl;
